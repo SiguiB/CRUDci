@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/codeigniter-proy/public/';
+    public $baseURL = 'http://localhost/CRUDci/public/';
 
     /**
      * --------------------------------------------------------------------------
