@@ -34,7 +34,6 @@
         "CI_ENVIRONMENT": "production",
         "PHP_VERSION": "7.4"
       },
-      "command": "composer install --no-dev && php spark migrate",
       "output": "public"
     }
   }
