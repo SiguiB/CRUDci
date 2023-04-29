@@ -1,0 +1,40 @@
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.php/movies/index"
+      },
+      {
+        "src": "/listMovie",
+        "dest": "/index.php/movies/index"
+      },
+      {
+        "src": "/crearMovie",
+        "dest": "/index.php/movies/crear"
+      },
+      {
+        "src": "/guardarMovie",
+        "dest": "/index.php/movies/guardar"
+      },
+      {
+        "src": "/borrar/:num",
+        "dest": "/index.php/movies/borrar/:num"
+      },
+      {
+        "src": "/editar/:num",
+        "dest": "/index.php/movies/editar/:num"
+      },
+      {
+        "src": "/actualizarMovie",
+        "dest": "/index.php/movies/actualizar"
+      }
+    ],
+    "build": {
+      "env": {
+        "CI_ENVIRONMENT": "production",
+        "PHP_VERSION": "7.4"
+      },
+      "command": "composer install --no-dev && php spark migrate",
+      "output": "public"
+    }
+  }
