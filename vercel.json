@@ -1,9 +1,4 @@
-{   
-    "functions":{
-      "api/*.php":{
-        "runtime": "vercel-php@0.6.0"
-      }
-    },
+{
     "routes": [
       {
         "src": "/(.*)",
@@ -33,5 +28,11 @@
         "src": "/actualizarMovie",
         "dest": "/index.php/movies/actualizar"
       }
-    ]
+    ],
+    "build": {
+      "env": {
+        "CI_ENVIRONMENT": "production",
+        "PHP_VERSION": "7.4"
+      }
+    }
   }
