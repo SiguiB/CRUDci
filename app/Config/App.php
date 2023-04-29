@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/CRUDci/public/';
+    public $baseURL = 'http://localhost/CRUDci/api';
 
     /**
      * --------------------------------------------------------------------------
@@ -37,7 +37,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'listMovie.php';
+    public $indexPage = 'index.php';
 
     /**
      * --------------------------------------------------------------------------
