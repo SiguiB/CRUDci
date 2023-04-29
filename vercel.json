@@ -7,31 +7,31 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "index.php/movies/index"
+        "dest": "/movies/index"
       },
       {
         "src": "/listMovie",
-        "dest": "/index.php/movies/index"
+        "dest": "/movies/index"
       },
       {
         "src": "/crearMovie",
-        "dest": "/index.php/movies/crear"
+        "dest": "/movies/crear"
       },
       {
         "src": "/guardarMovie",
-        "dest": "/index.php/movies/guardar"
+        "dest": "/movies/guardar"
       },
       {
         "src": "/borrar/:num",
-        "dest": "/index.php/movies/borrar/:num"
+        "dest": "/movies/borrar/:num"
       },
       {
         "src": "/editar/:num",
-        "dest": "/index.php/movies/editar/:num"
+        "dest": "/movies/editar/:num"
       },
       {
         "src": "/actualizarMovie",
-        "dest": "/index.php/movies/actualizar"
+        "dest": "/movies/actualizar"
       }
     ],
     "build": {
