@@ -6,6 +6,10 @@
   },
     "routes": [
       {
+        "src": "/(.*)",
+        "dest": "index.php/movies/index"
+      },
+      {
         "src": "/listMovie",
         "dest": "/movies/index"
       },
